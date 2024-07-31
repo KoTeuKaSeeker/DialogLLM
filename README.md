@@ -1,2 +1,2 @@
 # GPT-2-from-scratch
-It repository contains transformer model like GPT-2 made according to Andrej Karpathy's tutorial
+The repository contains a model of a GPT-2 transformer, based on a tutorial by Andrej Karpathy
