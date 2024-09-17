@@ -19,91 +19,10 @@ The model has more than 100 million parameters, so the training took place on th
 1. [Casual train](https://www.kaggle.com/code/danildolgov/casual-train)
 2. [Finetune LLN](https://www.kaggle.com/code/danildolgov/llm-finetune)
 
+Trained models are also on Kaggle. You can find them [here](https://www.kaggle.com/models/danildolgov/nanogpt/).
 
-
-# Running Locally
-
-To run the project locally, you need to enter the commands below. To do this, you will need to open 3 instances of terminal that you will be using. 
-Each instance will be associated with back-end, front-end or tensorflow/serving model.
-
-> **Note**
-> 
-> In the following commands, the path to the newly cloned project will be specified as ``[project dir]``.
-> 
-> **Example**
-> 
-> Let's say you cloned this project into this directory:
-> ```shell
-> C:\Projects\
-> ```
->  Then ``[project dir]`` is:
-> ```shell
-> C:\Projects\nlp-natural-disaster\
-> ```
-> So if you need to enter a command:
-> ```shell
-> cd [project dir]
-> ```
-> Then, instead, you should enter this:
-> ```shell
-> cd C:\Projects\nlp-natural-disaster\
-> ```
-
-### Terminal instance #1 (back-end)
-Make sure that you have [Python](https://www.python.org/downloads/release/python-3115/) installed.
-```shell
-cd [project dir]
-```
-```shell
-python -m venv venv
-```
-> **Important**
-> 
-> Windows Powershell:
-> ```shell
-> venv\Scripts\activate.ps1
-> ```
->
-> Windows Command Prompt:
-> ```shell
-> venv\Scripts\activate
-> ```
-```shell
-pip install -r requirements.txt
-```
-```shell
-cd back-end
-```
-```shell
-python server.py -d
-```
-
-### Terminal instance #2 (front-end)
-Make sure that you have [node.js](https://nodejs.org/en) installed.
-```shell
-cd [project dir]
-```
-```shell
-cd front-end
-```
-```shell
-npm install
-```
-```shell
-npm start
-```
-### Terminal instance #3 (tensorflow/serving)
-Make sure that you have [Docker](https://www.docker.com/) installed and running.
-> **Note**
->
-> ``[project dir]`` in this command should be substituted by you project directory path.
-```shell
-docker run --rm -it -v [project dir]\tensorflow-model\models:/models -p 8605:8605 --entrypoint /bin/bash tensorflow/serving
-```
-```shell
-tensorflow_model_server --rest_api_port=8605 --model_name=nlp_natural_disaster --model_base_path=/models/
-```
-Your app should now be running on [localhost:4000](http://localhost:4000/).
+# Running
+To try running the code, you need to download the project and run the python file <b>dialog_demo.py</b>. The models will download themselves if it is discovered that they are not in the project. If this does not happen for some reason, you can download the model yourself from the link above and specify the path to the downloaded file.
 
 # Techonlogies used
 
@@ -132,5 +51,5 @@ Here are all the technologies that were used to create this project:
 > [![Git](https://img.shields.io/badge/Git-%23EA330E?logo=git&logoColor=white)](https://git-scm.com/)
 
 # Preview
-This is what the application looks like when it's running:
-![app_preview](https://github.com/SpectreSpect/nlp-natural-disaster/assets/52841087/25cd1fc0-7c4a-4dcc-90c0-b3e69b12d2d7)
+Here is a demonstration of what a dialogue with a model will look like and what responses it gives.
+![model preview](https://github.com/SpectreSpect/nlp-natural-disaster/assets/52841087/25cd1fc0-7c4a-4dcc-90c0-b3e69b12d2d7)
