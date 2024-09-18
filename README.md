@@ -24,7 +24,7 @@ The model was first trained to predict the most likely continuation of the text 
 
 The model has more than 100 million parameters, so the training took place on the [Kaggle platform](https://www.kaggle.com/):
 1. [Casual train](https://www.kaggle.com/code/danildolgov/casual-train)
-2. [Finetune LLN](https://www.kaggle.com/code/danildolgov/llm-finetune)
+2. [Finetune LLM](https://www.kaggle.com/code/danildolgov/llm-finetune)
 
 Trained models are also on Kaggle. You can find them [here](https://www.kaggle.com/models/danildolgov/nanogpt/).
 
