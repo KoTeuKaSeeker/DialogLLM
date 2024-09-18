@@ -24,6 +24,10 @@ Trained models are also on Kaggle. You can find them [here](https://www.kaggle.c
 # Running
 To try running the code, you need to download the project and run the python file <b>dialog_demo.py</b>. The models will download themselves if it is discovered that they are not in the project. If this does not happen for some reason, you can download the model yourself from the link above and specify the path to the downloaded file.
 
+# Preview
+Here is a demonstration of what a dialogue with a model will look like and what responses it gives.
+![model preview](https://github.com/SpectreSpect/nlp-natural-disaster/assets/52841087/25cd1fc0-7c4a-4dcc-90c0-b3e69b12d2d7)
+
 # Techonlogies used
 
 Here are all the technologies that were used to create this project:
@@ -49,7 +53,3 @@ Here are all the technologies that were used to create this project:
 > [![TensorFlowServing](https://img.shields.io/badge/TensorFlow%2Fserving-%23F0910E?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/tfx/guide/serving)
 > [![Docker](https://img.shields.io/badge/Docker-%231D63ED?logo=docker&logoColor=white)](https://www.docker.com/)
 > [![Git](https://img.shields.io/badge/Git-%23EA330E?logo=git&logoColor=white)](https://git-scm.com/)
-
-# Preview
-Here is a demonstration of what a dialogue with a model will look like and what responses it gives.
-![model preview](https://github.com/SpectreSpect/nlp-natural-disaster/assets/52841087/25cd1fc0-7c4a-4dcc-90c0-b3e69b12d2d7)
